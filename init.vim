@@ -11,7 +11,7 @@
 " neovim : ~/.config/nvim/init.vim
 
 " ===
-" === 第一次使用 VIM 加载插件
+" === 第一次使用 VIM 时加载插件
 " ===
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
     silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
