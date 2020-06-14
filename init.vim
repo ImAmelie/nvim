@@ -255,6 +255,9 @@ func! CompileRunC()
     endif
 endfunc
 
+" Call figlet
+noremap tx :r !figlet 
+
 " ===
 " === Install Plugins with vim-plug
 " ===
