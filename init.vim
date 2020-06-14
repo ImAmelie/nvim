@@ -265,8 +265,16 @@ noremap tx :r !figlet
 
 call plug#begin('~/.config/nvim/plugged')
 
+" tabline
+Plug 'mg979/vim-xtabline'
+" emoji
+" 需要安装 nerd 字体
+" AUR搜索 : nerd-fonts
+Plug 'ryanoasis/vim-devicons'
+
 " 状态栏
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Plug 'liuchengxu/eleline.vim'
 Plug 'bling/vim-bufferline'
 
@@ -275,6 +283,10 @@ Plug 'connorholyday/vim-snazzy'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'majutsushi/tagbar'
+
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -298,6 +310,28 @@ call plug#end()
 " 主题透明背景
 let g:SnazzyTransparent = 1
 color snazzy
+
+" tabline
+let g:xtabline_settings = {}
+let g:xtabline_settings.enable_mappings = 0
+let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+let g:xtabline_settings.enable_persistance = 0
+let g:xtabline_settings.last_open_first = 1
+if !empty(glob('~/.config/nvim/plugged/vim-xtabline'))
+    autocmd VimEnter * :XTabTheme dracula
+endif
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='badwolf'
+
+" gitgutter
+let g:gitgutter_signs = 0
+let g:gitgutter_map_keys = 0
+let g:gitgutter_override_sign_column_highlight = 0
+let g:gitgutter_preview_win_floating = 1
 
 map <F3> :NERDTreeToggle<CR>
 
