@@ -112,10 +112,11 @@ nnoremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 map R :source $MYVIMRC<CR>
 
 " 导航
-noremap H 5h
-noremap J 5j
-noremap K 5k " 与后面 coc.nvim 的快捷键映射冲突
-noremap L 5l
+noremap i k
+noremap k j
+noremap j h
+noremap h i
+noremap H I
 
 " 普通模式下，使 Y 复制到行尾
 nnoremap Y y$
