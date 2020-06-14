@@ -266,6 +266,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " 状态栏
 Plug 'vim-airline/vim-airline'
+"Plug 'liuchengxu/eleline.vim'
+Plug 'bling/vim-bufferline'
 
 " 配色
 Plug 'connorholyday/vim-snazzy'
