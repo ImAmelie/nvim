@@ -1,12 +1,14 @@
-" vim : ~/.vim/vimrc or ~/.vimrc
-" neovim : ~/.config/nvim/init.vim
-
 "  __  __        __     _____ __  __ ____   ____ 
 " |  \/  |_   _  \ \   / /_ _|  \/  |  _ \ / ___|
 " | |\/| | | | |  \ \ / / | || |\/| | |_) | |    
 " | |  | | |_| |   \ V /  | || |  | |  _ <| |___ 
 " |_|  |_|\__, |    \_/  |___|_|  |_|_| \_\\____|
 "         |___/                                  
+
+" Author : Amelie
+
+" vim : ~/.vim/vimrc or ~/.vimrc
+" neovim : ~/.config/nvim/init.vim
 
 " ===
 " === 第一次使用 VIM 加载插件
