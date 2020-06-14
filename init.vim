@@ -118,6 +118,8 @@ noremap k j
 noremap j h
 noremap h i
 noremap H I
+noremap <C-i> 5k
+noremap <C-k> 5j
 
 " 普通模式下，使 Y 复制到行尾
 nnoremap Y y$
