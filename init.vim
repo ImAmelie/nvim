@@ -172,7 +172,7 @@ noremap N Nzz
 
 " 标签页
 " :tabe 打开新的标签页
-map <LEADER>tn :tabe<CR>
+map <LEADER>n :tabe<CR>
 map <tab> :tabnext<CR>
 map <S-tab> :-tabnext<CR>
 " :tabmove 移动标签到右边
@@ -315,11 +315,13 @@ let g:SnazzyTransparent = 1
 color snazzy
 
 " tabline
-let g:xtabline_settings = {}
-let g:xtabline_settings.enable_mappings = 0
-let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
-let g:xtabline_settings.enable_persistance = 0
-let g:xtabline_settings.last_open_first = 1
+"let g:xtabline_settings = {}
+"let g:xtabline_settings.enable_mappings = 0
+"let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+"let g:xtabline_settings.enable_persistance = 0
+"let g:xtabline_settings.last_open_first = 1
+"nmap <tab> :XTabNextBuffer<CR>
+"nmap <s-tab> :XTabPrevBuffer<CR>
 if !empty(glob('~/.config/nvim/plugged/vim-xtabline'))
     autocmd VimEnter * :XTabTheme dracula
 endif
