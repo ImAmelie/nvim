@@ -5,7 +5,7 @@
 " |_|  |_|\__, |    \_/  |___|_|  |_|_| \_\\____|
 "         |___/                                  
 
-" Author : Amelie
+" Author : @AmelieNet , @theniceboy
 
 " vim : ~/.vim/vimrc or ~/.vimrc
 " neovim : ~/.config/nvim/init.vim
