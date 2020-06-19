@@ -23,7 +23,7 @@ endif
 " === 基本设置
 " ===
 
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set autochdir
 set cursorline
 set list
